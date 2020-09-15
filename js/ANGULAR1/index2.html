@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS vj2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+
+</head>
+<body ng-app="StoreApp">
+
+    <!-- Bez klika
+    <div ng-controller="StoreController">
+
+        <strong>Invoice: </strong>
+        <label>Price</label>
+        <input type="number" min="1" ng-model="price">
+        <br>
+        <label>Quantity</label>
+        <input type="number" min="1" ng-model="quantity">
+        <p><strong>Total: </strong> {{count() | currency}}</p>
+
+    </div>
+
+    <script>
+
+        var storeApp = new angular.module("StoreApp", []);
+
+        storeApp.controller("StoreController", function($scope){
+
+            $scope.price = 1;
+            $scope.quantity = 2;
+            $scope.count = function(){
+                return $scope.price * $scope.quantity;
+            }
+
+        });
+
+    </script>
+
+    -->
+
+        <div ng-controller="StoreController">
+
+            <strong>Invoice: </strong>
+            <label>Price</label>
+            <input type="number" min="1" ng-model="price">
+            <br>
+            <label>Quantity</label>
+            <input type="number" min="1" ng-model="quantity">
+            <p><strong>Total: </strong> {{result | currency}}</p>
+            <button ng-click="count()">Click to calculate</button>
+
+        </div>
+
+        <script>
+
+            var storeApp = new angular.module("StoreApp", []);
+
+            storeApp.controller("StoreController", function($scope){
+
+                $scope.price = 1;
+                $scope.quantity = 2;
+                $scope.result = 'unknown';
+                $scope.count = function(){
+                    $scope.result = $scope.price * $scope.quantity;
+                }
+
+            });
+
+        </script>
+
+</body>
+</html>

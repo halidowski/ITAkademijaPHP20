@@ -1,0 +1,1 @@
+[{"team1":"FK Sarajevo", "team2":"FK Željezničar", "result":"6:2"}]

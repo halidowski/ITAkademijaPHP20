@@ -1,0 +1,36 @@
+#wrapper{
+	
+	background: #0000FF;
+	height: 300px;
+	width: 960;
+	margin: 0 auto;
+}
+
+
+@media screen and (max-width: 800px){
+	
+	#wrapper{
+		
+		background: #b30b0b;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px){
+	
+	#wrapper{
+		
+		background: #28AC3A;
+	}
+}
+
+@media screen and (min-width: 1400px){
+	
+	#wrapper{
+		
+		background: #000;
+	}
+}
+
+
+
+

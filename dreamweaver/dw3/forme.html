@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+<title>Forme</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+	
+<form action="process.php" method="POST">
+	
+		<fieldset>
+			
+			<legend>Registration form</legend>
+	
+	<label for="username">Username: </label>
+  <input type="text" name="username" placeholder="Unesi svoj username" value="" maxlength="20" required>
+		
+		<br><br>
+		
+  <label for="password">Password: </label>
+	<input type="password" name="password" placeholder="Unesi svoj password" required>
+		
+		<br><br>
+		
+  <textarea name="Biografija" placeholder="Unesi svoju biografiju" disabled></textarea>
+		
+		<br><br>
+	
+  <label for="gender">Unesi spol: </label>
+		
+		<spam>Muški</spam>
+  <input type="radio" name="gender" value="male">
+		<spam>Ženski</spam>
+	<input type="radio" name="gender" value="female">
+		<spam>Drugo</spam>
+  <input type="radio" name="gender" value="other">
+		
+		<br><br>
+		
+	<label for="color">Izaberi boju: </label>
+	<input type="color" name="color">
+		
+		<br><br>
+		
+	<input type="file" name="file[]">
+		
+		<br><br>
+					
+  <label for="privacy">Slažem se sa uslovima privatnosti</label>
+  <input type="checkbox" name="privacy" checked>
+		
+		<br><br>
+		
+  <input type="reset">
+	<input type="submit" value="Moimo vas potvrdite">
+	
+		</fieldset>
+	
+	
+</form>
+	
+	
+	
+</body>
+	
+</html>

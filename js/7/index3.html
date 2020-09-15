@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vježba 7.3</title>
+</head>
+<body>
+    
+    <script>
+
+        play = document.createElement("div");
+
+        play.style.cssText = "width: 500px; height: 500px; border: 1px solid #d1d1d1";
+
+        var mousedown = false;
+
+        play.onmousedown = function(){mousedown = true}
+        play.onmouseup = function(){mousedown = false}
+        play.onmousemove = function(event){
+
+            if(!mousedown) return;
+
+            point = document.createElement("div");
+            point.style.cssText = "position: absolute; background-color: #2ea3f2; width: 5px; height: 5px";
+            point.style.left = event.clientX + "px";
+            point.style.top = event.clientY + "px";
+            play.appendChild(point);
+        }
+
+        document.body.appendChild(play);
+
+
+    </script>
+
+</body>
+</html>

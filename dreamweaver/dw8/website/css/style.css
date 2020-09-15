@@ -1,0 +1,342 @@
+*{
+	
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+body, ul{
+	
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	
+	width: 100%;
+}
+
+a{
+	
+	text-decoration: none;
+	color: #000;
+}
+
+#wrapper #top-header img{
+	
+	max-width: 16px;
+}
+
+#wrapper #top-header{
+	
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 10%;
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+}
+
+#wrapper #top-header a, #wrapper .top-header-right img{
+	
+	display: inline-block;
+	padding: 10px 15px;
+	color: #969696;
+}
+
+#wrapper #bottom-header{
+	
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 10%
+}
+
+#wrapper #bottom-header img{
+	
+	max-width: 200px;
+	display: inline-block;
+	padding: 12px 0;
+}
+
+#wrapper .bottom-header-right ul li{
+	
+	display: inline-block;
+}
+
+#wrapper .bottom-header-right ul li a{
+	
+	text-transform: uppercase;
+	padding: 27px 20px;
+	display: inline-block;
+	font-size: 15px;
+	transition: 250ms ease-in-out all;
+}
+
+#wrapper .bottom-header-right ul li a:hover{
+	
+	background-color: #0051d2;
+	color: #FFF;
+	transform: scale(1.02);
+}
+
+.vh100{
+	
+	min-height: 100vh; /* min - jer bez njega može praviti probleme kod mobitela */
+}
+
+#main-content section{
+	
+	width: 100%;
+	padding: 5% 10%;
+	box-sizing: border-box;
+}
+
+#main-content .section-one{
+	
+	background-image: url("../media/banner/home-banner.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+} 
+
+#main-content .section-one .content{
+	
+	width: 40%
+}
+
+#main-content .section-one .content h1{
+	
+	font-size: 45px;
+}
+
+#main-content .section-one .content p{
+	
+	font-size: 15px;
+	color: #969696;
+	line-height: 160%;
+	margin-bottom: 40px;
+}
+
+#main-content .section-one .content button{
+	
+	border: 1px solid #0051d2;
+	font-size: 16px;
+	padding: 16px 20px;
+}
+
+#main-content .section-one .content button.left{
+	
+	background-color: #0051d2;
+	color: #FFF;
+	transition: all ease-in-out 250ms;
+	margin-right: 10px;
+}
+
+#main-content .section-one .content button.left:hover{
+	
+	background-color: #FFF;
+	color: #0051d2;
+	cursor: pointer;
+}
+
+#main-content .section-one .content button.right{
+	
+	background: transparent;
+	color: #333;
+	transition: all ease-in-out 250ms;
+}
+
+#main-content .section-one .content button.right:hover{
+	
+	background-color: #0051d2;
+	color: #FFF;
+	cursor: pointer;
+}
+
+#main-content .section-two{
+	
+	display: flex;
+	background: url("../media/banner/pattern_bg.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#main-content .section-two div{
+	
+	background: #FFF;
+	padding: 30px;
+	margin: 15px;
+}
+
+#main-content .section-two div h2{
+	
+	font-size: 20px;
+}
+
+#main-content .section-two div p{
+	
+	color: #969696;
+}
+
+#main-content .section-three .row-1{
+	
+	display: flex;
+	justify-content: space-between;
+}
+
+#main-content .section-three .row-1 h3{
+	
+	width: 30%;
+	font-size: 40px;
+	margin-top: 0;
+}
+
+#main-content .section-three .row-1 p{
+	
+	width: 60%;
+	margin-top: 8px;
+	color: #969696;
+	line-height: 130%;
+}
+
+#main-content .section-three .row-2{
+	
+	display: flex;
+	justify-content: space-between;
+}
+
+#main-content .section-three .row-2 div{
+	
+	width: 31%;
+	padding: 30px;
+	box-sizing: border-box;
+	background: #FFF;
+	border: 1px solid #eee;
+}
+
+#main-content .section-three div i{
+	
+	margin-bottom: 20px;
+	display: inline-block;
+	background: #eee;
+	padding: 12px;
+	border-radius: 100%;
+}
+
+#main-content .section-three div i:before{
+	
+	font-size: 40px;
+	margin: 0;
+}
+
+#main-content .section-three div hr{
+	
+	border: 1px solid #eee;
+}
+
+#main-content .section-three div h4{
+	
+	font-size: 20px;
+}
+
+#main-content .section-three div p{
+	
+	font-size: 15px;
+	line-height: 150%;
+	color: #969696;
+}
+
+#main-content .section-three div a{
+	
+	font-size: 15px;
+	letter-spacing: 1px;
+	display: inline-block;
+	margin-top: 15px;
+	position: relative;
+}
+
+#main-content .section-three div a::after{
+	
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -14px;
+	height: 2px;
+	width: 40px;
+	background: #33363e;
+	transition: all 300ms linear 0s;
+}
+
+#main-content .section-three div a:hover::after{
+	
+	width: 100%;
+	background: #0051d2;
+}
+
+#main-content .section-four{
+	
+	background: url(../media/banner/about1.png), url(../media/background/bg_1.png);
+	background-position: left bottom, center;
+	background-size: auto, cover;
+	padding-bottom: 100px;
+	padding-top: 400px;
+	background-color: #eee;
+	background-repeat: no-repeat;
+	margin-top: -180px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#main-content .section-four .content{
+	
+	width: 40%;
+}
+
+#main-content .section-four .content h3{
+	
+	font-size: 40px;
+}
+
+#main-content .section-four .content .blue{
+	
+	color: #0051d2;
+	line-height: 130%;
+}
+
+#main-content .section-four .content p:not(.blue){
+	
+	font-size: 15px;
+	line-height: 160%;
+	color: #969696;
+}
+
+#main-content .section-four .content a{
+	
+	font-size: 15px;
+	letter-spacing: 1px;
+	display: inline-block;
+	margin-top: 15px;
+	position: relative;
+}
+
+#main-content .section-four .content a::after{
+	
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -14px;
+	height: 2px;
+	width: 40px;
+	background: #33363e;
+	transition: all 300ms linear 0s;
+}
+
+#main-content .section-four .content a:hover::after{
+	
+	width: 100%;
+	background: #0051d2;
+}
+
+
+
+
+
