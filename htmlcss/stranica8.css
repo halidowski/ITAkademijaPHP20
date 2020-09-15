@@ -1,0 +1,16 @@
+h1{
+    padding: 20px;color:hotpink;
+}
+p{
+    padding: 10px; 
+    margin: 20px;
+    background: blue; 
+    color: #000;}
+ul{
+    background: brown;
+}
+
+h1{
+    color: aquamarine;
+    border: solid blueviolet;
+}

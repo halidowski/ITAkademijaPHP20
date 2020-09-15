@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE automobili
+
+[
+    <!ELEMENT automobili (model, tip, karakteristike)>
+    <!ATTLIST automobili proizvodac CDATA "">
+    <!ELEMENT model (#PCDATA)>
+    <!ELEMENT tip (#PCDATA)>
+    <!ELEMENT karakteristike (snaga, vrata)>
+    <!ELEMENT snaga (#PCDATA)>
+    <!ELEMENT vrata (#PCDATA)>
+]>
+
+<!-- Root element: automobili -->
+
+<automobili>
+
+    <automobil proizvodac="Audi">
+
+        <model>A3</model>
+        <tip>Sportback</tip>
+        <karakteristike>
+            <!-- snaga u KS -->
+            <snaga>105</snaga>
+            <vrata>5</vrata>
+        </karakteristike>
+    
+    </automobil>
+
+    <automobil proizvodac="VW">
+
+        <model>Golf</model>
+        <tip>Karavan</tip>
+        <karakteristike>
+            <!-- snaga u KS -->
+            <snaga>95</snaga>
+            <vrata>5</vrata>
+        </karakteristike>
+    
+    </automobil>
+
+    <automobil proizvodac="Ford">
+
+        <model>Escort</model>
+        <tip>Limuzina</tip>
+        <karakteristike>
+            <!-- snaga u KS -->
+            <snaga>90</snaga>
+            <vrata>5</vrata>
+        </karakteristike>
+    
+    </automobil>
+    
+
+</automobili>

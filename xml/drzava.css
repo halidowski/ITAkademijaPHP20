@@ -1,0 +1,40 @@
+naziv{
+
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
+
+glavniGrad{
+
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
+
+opis{
+
+    font-size: 16px;
+    display: block;
+    transition: all ease-in-out 250ms;
+}
+
+opis:hover{
+
+    font-size: 40px;
+    padding: 5px;
+    background-color: #333;
+    color: #eee;
+}
+
+#c01{
+
+    padding: 20px;
+}
+
+.bih{
+
+    border: 1px solid #000;
+}

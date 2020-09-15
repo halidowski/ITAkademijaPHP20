@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+	
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatibile" content="id-edge">
+
+	<title>HTML5 Layout</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+</head>
+
+<body>
+	
+	<div id="wrapper">
+	
+		<header id="main-header">
+		<!--
+		a)Kada krenemo scrollati meni treba biti uvijek fixiran (prikazan) na vrhu stranice
+		b)Meni na mobitelu uglavnom izgleda drugačije (zbog konfiguracije prostora) "hamburger meni" 
+		c)Najefikasnija i najlakša varijanta da se meni na mobitelu izvlači sa strane
+		d)Razmisliti o mjestu dugmića koji otvara meni na mobilnim stranicama
+		-->
+			
+			<div id="logo">
+			
+				<a href="index.html">
+				
+					<img src="#" alt="#">
+					<!--
+					a)Logo može biti vektorski logo (najčešće) u .png formatu
+					b)Logo može biti rasterski logo u .jpg/.jpeg formatu
+					c)Logo može biti u vektorskoj varijanti u .svg formatu (Možemo upravljati CSS-om i JC-om direktno nad njim)
+					d)Logo može biti video (<video> element) loopovan
+					e)Logo može biti u .gif formatu
+					-->
+				</a>
+				
+			</div>
+			
+			<nav id="main-navigation">
+				
+				<ul>
+				
+					<li><a href="#">Home</a></li>
+					<li><a href="#">#</a></li>
+					<li><a href="#">#</a></li>
+					
+				</ul>
+				<!--
+				a)Navigacija je najčešće lista elemenata
+				b)Linkovi se redaju po važnosti (najbolja varijanta)
+				c)Najčešće imamo Home, Contact i About Us
+				-->
+				
+			</nav>
+		
+		</header>
+		
+		<main id="main-content">
+		<!-- Dobro bi bilo podijeliti sadržaj na sekcije -->	
+			
+			<section>
+			
+				<div class="left"></div>
+				<div class="right"></div>
+				<div class="top"></div>
+				<div class="bottom">
+				
+					<article>
+					
+						<header class="article-header">
+						
+							<h2>Naslov...</h2>
+							<h3>Podnaslov...</h3>
+							
+						</header>
+						
+						<div class="article-main">
+						
+							<ul>
+							
+								<li>Jedan</li>
+								<li>Dva</li>
+							
+							</ul>
+							
+						</div>
+						
+						<footer class="article-footer">
+						
+							<a href="#">Autor ovog iznad</a>
+							<a href="#">Datum članka i vrijeme</a>
+							<a href="#">Kategorije</a>
+							<a href="#">Tagovi</a>
+							
+							<div class="povezani-proizvodi">
+							<!-- Proizvodi vezani za onaj na kojem se trenutno nalazimo -->
+							</div>
+						
+						</footer>
+					
+					</article>
+					<article></article>
+				
+				</div>
+				<!-- Podijeliti sekciju u dijelove (zavisno od dizajna) -->
+				
+			</section>
+			<section></section>
+			<section></section>
+		
+		</main>
+		
+		<aside id="main-sidebar">
+		
+		</aside>
+	
+		<footer id="main-footer">
+			
+			<div id="footer-navigation">
+			
+				<ul>
+				
+					<li><a href="#">Home</a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					
+				</ul>
+				<!-- Ponovljena navigacija -->
+			
+			</div>
+			
+			<div id="footer-bottom">
+			
+				<section>
+				<!-- Najvažnije kontakt informacije (po mogućnosti link ka googl mapi) i linkovi za direktno pozivanje na telefon ili viber/whatsupp, i direktni link za email -->
+				</section>
+				<section>
+				<!-- Morate imati neki vid bloga/novost (npr. objašnjenje funkcioniranja mobitela - instalacije, postavke i sl). Ili najčitanije ili zadnje novosti -->
+				</section>
+				<section>
+				<!-- Najprodavaniji/najbolje ocjenjeni/najviše komentara/nešto naj, naj, naj proizvodi-->
+				</section>
+				<section>
+				<!-- Socijalne mreže po mogućnosti sa nekom vrstom feed-a -->
+				</section>
+			
+			</div>
+			
+			<div id="copyraight">
+			<!-- Informacije o nazivu firme, od kada postoji, ko je napravio stranicu sa linkom, i evenualno cookies o policy/privacy policy (dva linka) -->
+			</div>
+		
+		</footer>	
+		
+	</div>
+	
+</body>
+	
+</html>

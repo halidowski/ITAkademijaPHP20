@@ -1,0 +1,21 @@
+.paragrafi p:first-child{
+	
+	color: red;
+}
+
+.paragrafi p:last-child{
+	
+	color: blue;
+}
+
+.paragrafi p:nth-child(4n+0){
+	
+	color: green;
+}
+
+.paragrafi p:nth-child(even):hover{
+	
+	color: purple;
+}
+
+

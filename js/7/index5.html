@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vježba 7.5</title>
+</head>
+<body>
+    
+    <div id="roditelj"></div>
+
+    <script>
+
+        function element(type, value, id, classes, style, parent){
+
+            var el = document.createElement(type); //Kreiramo element
+            el.innerHTML = value //Dodajemo mu vrijednost
+            idAtt = document.createAttribute("id"); //Kreiramo id atribut
+            idAtt.value = id; //Dodajemo id atributu vrijednost
+            el.setAttributeNode(idAtt); //Dodajemo id elementu 
+            classAtt = document.createAttribute("class"); //Kreiramo class atribut
+            classAtt.value = classes; //Dodajemo class atributu vrijednost
+            el.setAttributeNode(classAtt); //Dodajemo class elementu 
+            el.style.cssText = style; //Dodjela stilizacije
+            par = document.getElementById(parent); //Dobavljanje roditelja
+            par.appendChild(el); //Dodavanje elementa roditelju
+        }
+
+        element("div", "Moj Div", "mojdiv", "mojadivklasa", "border: 1px solid #2ea3f2", "roditelj");
+
+    </script>
+
+</body>
+</html>
